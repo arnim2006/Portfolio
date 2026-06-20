@@ -1,0 +1,112 @@
+.projects-section {
+  position: relative;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: left;
+}
+
+.project-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-indigo);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px rgba(79, 70, 229, 0.05);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-icon-wrapper {
+  color: var(--accent-fuchsia);
+  border-color: rgba(219, 39, 119, 0.2);
+  box-shadow: 0 0 15px rgba(219, 39, 119, 0.1);
+  transform: rotate(5deg);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+  color: #111827;
+}
+
+.project-desc {
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tag {
+  font-size: 0.725rem !important;
+  padding: 0.2rem 0.5rem !important;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-link-btn:hover {
+  color: #111827;
+}
+
+.live-btn {
+  color: var(--accent-cyan);
+}
+
+.live-btn:hover {
+  color: var(--accent-indigo);
+  text-shadow: 0 0 10px rgba(79, 70, 229, 0.1);
+}
+
+/* Tablet & Mobile responsive */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

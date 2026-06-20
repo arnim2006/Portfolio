@@ -1,0 +1,46 @@
+.experience-section {
+  position: relative;
+}
+
+.experience-card {
+  text-align: left;
+  position: relative;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.exp-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.timeline-item:hover .exp-type-badge {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item:nth-child(odd) .exp-header {
+  flex-direction: row-reverse;
+}
+
+/* Timeline alignment for responsive screens */
+@media (max-width: 768px) {
+  .exp-header {
+    flex-direction: row !important;
+  }
+}
