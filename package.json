@@ -1,32 +1,16 @@
 {
-  "name": "portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "portfolio-monorepo",
+  "version": "1.0.0",
+  "description": "Arnim Agarwal Portfolio - Monorepo Structure",
   "scripts": {
-    "dev": "vite",
-    "server": "npm run start --prefix server",
-    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "install:all": "npm install --prefix frontend && npm install --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run start --prefix backend",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build:frontend": "npm run build --prefix frontend"
   },
-  "dependencies": {
-    "framer-motion": "^12.40.0",
-    "lucide-react": "^0.420.0",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "concurrently": "^10.0.3",
-    "eslint": "^10.3.0",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.6.0",
-    "vite": "^8.0.12"
+    "concurrently": "^10.0.3"
   }
 }
