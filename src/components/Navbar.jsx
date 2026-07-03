@@ -105,7 +105,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
 
-          <a href="#" className="resume-btn" title="Download Resume">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn" title="Download Resume">
             <FileText size={16} />
             <span>Resume</span>
           </a>
@@ -160,7 +160,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               <Mail size={20} />
             </a>
           </div>
-          <a href="#" className="mobile-resume-btn">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="mobile-resume-btn">
             <FileText size={18} />
             <span>Resume</span>
           </a>
