@@ -67,7 +67,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container container">
         <a href="#hero" className="navbar-logo" onClick={(e) => { e.preventDefault(); handleNavClick('hero'); }}>
-          Tanvi<span className="logo-dot">.</span>
+          Arnim<span className="logo-dot">.</span>
         </a>
 
         {/* Desktop Navigation Links */}
@@ -85,13 +85,13 @@ const Navbar = ({ theme, toggleTheme }) => {
 
         {/* Desktop Social/Resume/Theme links */}
         <div className="navbar-socials">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="GitHub">
+          <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="GitHub">
             <Github size={18} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="LinkedIn">
+          <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="LinkedIn">
             <Linkedin size={18} />
           </a>
-          <a href="mailto:tanvi@example.com" className="social-icon-link" title="Email">
+          <a href="mailto:arnimagarwal7@gmail.com" className="social-icon-link" title="Email">
             <Mail size={18} />
           </a>
           
@@ -150,13 +150,13 @@ const Navbar = ({ theme, toggleTheme }) => {
           </button>
 
           <div className="mobile-socials">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
+            <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
+            <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:tanvi@example.com" className="mobile-social-icon">
+            <a href="mailto:arnimagarwal7@gmail.com" className="mobile-social-icon">
               <Mail size={20} />
             </a>
           </div>

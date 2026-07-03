@@ -6,25 +6,18 @@ import './Journey.css';
 const Journey = () => {
   const milestones = [
     {
-      year: '2026',
-      title: 'Graduating & Beyond',
-      subtitle: 'B.Tech in Computer Science & Engineering',
+      year: '2024 - 2028',
+      title: 'B.Tech in Communication & Computer Engineering',
+      subtitle: 'The LNM Institute of Information Technology',
       icon: <School size={16} />,
-      desc: 'Completing B.Tech degree with a focus on web engineering, algorithms, and distributed databases. Seeking full-time roles in creative frontend engineering.'
+      desc: 'Pursuing my undergraduate degree with a CGPA of 7.73/10. Active member of technical clubs, focusing on Data Structures & Algorithms, Database Management, and Computer Networks.'
     },
     {
-      year: '2024 - 2025',
-      title: 'Fullstack Architectures & APIs',
-      subtitle: 'Deepening Engineering Skills',
+      year: '2018 - 2024',
+      title: 'Higher Secondary & Matriculation Education',
+      subtitle: 'Cambridge Court High School, Jaipur',
       icon: <Award size={16} />,
-      desc: 'Expanded knowledge to relational and non-relational database design, building scalable Node.js microservices, and deploying cloud systems. Participated in multiple national hackathons.'
-    },
-    {
-      year: '2023',
-      title: 'Discovering Web Crafting',
-      subtitle: 'Interactive Frontend Focus',
-      icon: <Compass size={16} />,
-      desc: 'Discovered the intersection of design and engineering. Mastered JavaScript, UI animations (GSAP, Framer Motion), accessibility (WCAG), and responsive layouts.'
+      desc: 'Completed secondary and higher secondary education with strong academic results. Achieved 89.8% in Intermediate board exams and 92.6% in Matriculation board exams.'
     }
   ];
 

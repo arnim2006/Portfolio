@@ -8,22 +8,22 @@ const Skills = () => {
     {
       title: 'Languages',
       icon: <Code2 size={24} className="category-icon icon-cyan" />,
-      skills: ['JavaScript (ES6+)', 'TypeScript', 'C / C++', 'Python', 'HTML5 / CSS3', 'SQL']
+      skills: ['JavaScript', 'SQL', 'C / C++', 'Python', 'Java', 'HTML5 / CSS3']
     },
     {
-      title: 'Frontend Frameworks',
+      title: 'Frontend & Libraries',
       icon: <Layout size={24} className="category-icon icon-indigo" />,
-      skills: ['React.js', 'Next.js', 'Redux Toolkit', 'GSAP', 'Framer Motion', 'Tailwind CSS']
+      skills: ['React.js', 'Astro', 'Three.js (R3F)', 'Zustand', 'GSAP', 'Framer Motion', 'Tailwind CSS']
     },
     {
       title: 'Backend & Database',
       icon: <Database size={24} className="category-icon icon-fuchsia" />,
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'Firebase', 'RESTful APIs']
+      skills: ['Node.js', 'Express.js', 'FastAPI', 'MongoDB', 'MySQL', 'Redis', 'RESTful APIs']
     },
     {
       title: 'Tools & Ecosystem',
       icon: <Wrench size={24} className="category-icon icon-cyan" />,
-      skills: ['Git & GitHub', 'VS Code', 'Postman', 'Vercel / Netlify', 'Linux / Bash', 'Figma']
+      skills: ['Git & GitHub', 'Docker', 'Kubernetes', 'Firebase', 'VS Code', 'Postman']
     }
   ];
 

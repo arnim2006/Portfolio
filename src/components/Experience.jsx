@@ -6,25 +6,18 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      role: 'Software Engineering Intern',
-      company: 'TechCorp Solutions',
-      date: 'May 2025 - August 2025',
+      role: 'Software Developer Intern',
+      company: 'Oil and Natural Gas Corporation (ONGC)',
+      date: 'June 2026 - Present',
       type: 'internship',
-      desc: 'Engineered and optimized web applications using React.js and TypeScript. Collaborated with designers to build accessible UI elements, integrated internal REST APIs, and reduced page load times by 22% using code splitting and image optimizations.'
+      desc: 'Architected a web-based 3D digital twin of a drilling rig using React and Three.js (React Three Fiber), decoupling 10 Hz telemetry from React reconciliation via Zustand. Integrated YOLOv8/BoT-SORT tracking with OpenCV and DLT triangulation. Built FastAPI WebSocket telemetry and RAG pipelines for automated root-cause analysis (RCA).'
     },
     {
-      role: 'Teaching Assistant (Web Development)',
-      company: 'Department of Computer Science',
-      date: 'September 2024 - April 2025',
+      role: 'Web Developer',
+      company: 'TEDxLNMIIT',
+      date: 'Oct 2025 - Dec 2025',
       type: 'academic',
-      desc: 'Guided a cohort of 60+ undergraduate students in JavaScript, React.js, and CSS principles. Conducted weekly lab hours, mentored team-based term projects, designed debugging worksheets, and graded programming assignments.'
-    },
-    {
-      role: 'Frontend Developer Intern',
-      company: 'WebLab Creative Studio',
-      date: 'June 2024 - August 2024',
-      type: 'internship',
-      desc: 'Crafted high-fidelity mockups into modular, fully responsive HTML/CSS/JS components. Implemented smooth interactive transitions and page reveal animations using GSAP, enhancing client user engagement scores.'
+      desc: 'Led end-to-end development of the official website using React and Astro, focusing on efficient asset handling and accessibility. Deployed on Vercel with GoDaddy domain integration, shipping SEO-optimized pages achieving 250+ search clicks and 2K+ impressions.'
     }
   ];
 

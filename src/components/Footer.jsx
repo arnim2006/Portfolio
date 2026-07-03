@@ -34,7 +34,7 @@ const Footer = () => {
         {/* Top Section */}
         <div className="footer-top">
           <div className="footer-brand">
-            <span className="footer-logo">Tanvi<span className="logo-dot">.</span></span>
+            <span className="footer-logo">Arnim<span className="logo-dot">.</span></span>
             <p className="brand-slogan">Crafting premium, visual web experiences.</p>
           </div>
 
@@ -59,17 +59,17 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; {currentYear} Tanvi. All rights reserved.
+            &copy; {currentYear} Arnim Agarwal. All rights reserved.
           </p>
 
           <div className="footer-socials">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="GitHub">
+            <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="GitHub">
               <Github size={16} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="LinkedIn">
+            <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="LinkedIn">
               <Linkedin size={16} />
             </a>
-            <a href="mailto:tanvi@example.com" className="social-icon-link" title="Email">
+            <a href="mailto:arnimagarwal7@gmail.com" className="social-icon-link" title="Email">
               <Mail size={16} />
             </a>
           </div>

@@ -72,13 +72,13 @@ const Contact = () => {
             </p>
 
             <div className="info-details">
-              <a href="mailto:tanvi@example.com" className="info-item">
+              <a href="mailto:arnimagarwal7@gmail.com" className="info-item">
                 <div className="info-icon-wrapper icon-cyan">
                   <Mail size={18} />
                 </div>
                 <div>
                   <span className="info-label">Email Me</span>
-                  <span className="info-value">tanvi@example.com</span>
+                  <span className="info-value">arnimagarwal7@gmail.com</span>
                 </div>
               </a>
 
@@ -96,10 +96,10 @@ const Contact = () => {
             <div className="info-socials">
               <h4 className="socials-title">Follow My Work</h4>
               <div className="socials-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
+                <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
+                <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
                   <Linkedin size={20} />
                 </a>
               </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  placeholder="Hi Tanvi, I would love to work with you on..."
+                  placeholder="Hi Arnim, I would love to work with you on..."
                   disabled={isSubmitting}
                 ></textarea>
               </div>

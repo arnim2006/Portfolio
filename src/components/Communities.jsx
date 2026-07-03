@@ -6,25 +6,25 @@ import './Communities.css';
 const Communities = () => {
   const involvements = [
     {
-      title: 'Smart India Hackathon Finalist',
-      role: 'Team Lead & Developer',
-      date: 'December 2024',
-      icon: <Award size={24} className="comm-icon icon-indigo" />,
-      desc: 'Selected in the national finals of SIH 2024. Led a 6-member team to design and pitch an AI-driven waste management monitoring solution for municipal corporations.'
-    },
-    {
-      title: 'GDG Student Club Lead',
-      role: 'Technical Coordinator',
-      date: 'August 2024 - Present',
+      title: 'TEDxLNMIIT Core Web Team',
+      role: 'Web Developer',
+      date: 'Oct 2025 - Dec 2025',
       icon: <Users size={24} className="comm-icon icon-cyan" />,
-      desc: 'Orchestrating technical bootcamps, workshops, and coding challenges for over 400+ campus students. Coordinated logistics, secured speakers, and mentored participants.'
+      desc: 'Led the end-to-end frontend development of the official TEDxLNMIIT event portal, structuring registrations, ticketing, and speaker cards for smooth outreach.'
     },
     {
-      title: 'Open Source Contributor',
-      role: 'Independent Contributor',
-      date: 'October 2023 & 2024',
+      title: 'Competitive Programming',
+      role: 'LeetCode Active Solver',
+      date: '2024 - Present',
+      icon: <Award size={24} className="comm-icon icon-indigo" />,
+      desc: 'Actively solving computational problems on LeetCode. Deeply interested in optimizing complex data structures and algorithmic complexity.'
+    },
+    {
+      title: 'ONGC Digital Twin Team',
+      role: 'Rig Telemetry Architect',
+      date: 'June 2026 - Present',
       icon: <Heart size={24} className="comm-icon icon-fuchsia" />,
-      desc: 'Actively contributed code, bug fixes, and documentation edits to popular JavaScript repositories during Hacktoberfest. Promoted open-source participation inside the campus.'
+      desc: 'Collaborated with engineering leads to architect real-time monitoring interfaces and high-performance telemetry loops for drilling rig operations.'
     }
   ];
 

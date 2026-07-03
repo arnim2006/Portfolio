@@ -41,15 +41,15 @@ const Hero = () => {
           </motion.div>
 
           <h1 className="hero-title">
-            Hi, I'm <span className="text-gradient">Tanvi</span>
+            Hi, I'm <span className="text-gradient">Arnim</span>
             <br />
-            <span className="title-highlight">Creative Developer</span>
+            <span className="title-highlight">Software Developer</span>
           </h1>
 
           <p className="hero-description">
-            I build highly interactive, accessible, and visually stunning web experiences. 
-            Specializing in modern JavaScript frameworks, responsive interfaces, and 
-            dynamic animations that bring concepts to life.
+            I engineer high-performance web applications, 3D digital twins, and real-time data pipelines. 
+            Specializing in React, Three.js (React Three Fiber), Node.js, computer vision integration, 
+            and scalable systems engineering.
           </p>
 
           <div className="hero-actions">

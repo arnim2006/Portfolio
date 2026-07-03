@@ -6,25 +6,25 @@ import './Projects.css';
 const Projects = () => {
   const projectList = [
     {
-      title: 'DevFlow - Q&A Platform',
-      desc: 'A fullstack developer-focused Q&A platform with AI-generated answer options, detailed user reputation scoring, advanced keyword filtering, voting systems, and customized tag directories.',
-      tags: ['Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'OpenAI API'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com'
+      title: 'Cravely - Food Discovery',
+      desc: 'A full-stack video-based food discovery platform that enables users to find local restaurants via short-form reels. Built with MERN architecture, role-based auth, infinite scrolling, and ImageKit media streaming.',
+      tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'ImageKit'],
+      githubLink: 'https://github.com/arnim2006',
+      liveLink: 'https://github.com/arnim2006'
     },
     {
-      title: 'RigVision - OpenCV Dashboard',
-      desc: 'An AI-powered video surveillance and object detection dashboard. Processes RTSP webcam feeds in real-time, overlaying bounding boxes, tracking movements, and logging events.',
-      tags: ['React.js', 'Electron', 'Python', 'OpenCV', 'YOLOv8'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com'
+      title: 'RigVision - Object Tracking',
+      desc: 'An AI-powered computer vision dashboard processing 4 RTSP feeds at 10 Hz. Integrates YOLOv8 and BoT-SORT trackers with OpenCV calibration and DLT triangulation for worker PPE auditing.',
+      tags: ['FastAPI', 'Redis', 'YOLOv8', 'OpenCV', 'Docker', 'React.js'],
+      githubLink: 'https://github.com/arnim2006',
+      liveLink: 'https://github.com/arnim2006'
     },
     {
-      title: 'Glassmorphic Canvas',
-      desc: 'This premium portfolio container. Leverages Vite, React, custom modular CSS variables, and Framer Motion scroll animation nodes to construct a fluid, responsive, futuristic user interface.',
-      tags: ['React.js', 'Vite', 'Vanilla CSS', 'Framer Motion', 'Lucide Icons'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com'
+      title: '3D Drilling Twin',
+      desc: 'A web-based 3D digital twin of an active drilling rig using React and Three.js (React Three Fiber), decoupling high-frequency 10 Hz telemetry from React reconciliation using Zustand.',
+      tags: ['React.js', 'Three.js (R3F)', 'Zustand', 'FastAPI', 'WebSockets'],
+      githubLink: 'https://github.com/arnim2006',
+      liveLink: 'https://github.com/arnim2006'
     }
   ];
 
