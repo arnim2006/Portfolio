@@ -173,108 +173,129 @@
 
 .visual-glow-backdrop {
   position: absolute;
-  top: 15%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-  filter: blur(40px);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
+  filter: blur(50px);
   z-index: -1;
   animation: pulse-glow 6s infinite alternate ease-in-out;
 }
 
-.tech-svg {
+.profile-image-container {
+  position: relative;
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.05));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.tech-svg line {
-  stroke: rgba(0, 0, 0, 0.08) !important;
+.profile-image-frame {
+  position: relative;
+  width: 82%;
+  height: 82%;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-indigo) 50%, var(--accent-fuchsia) 100%);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15),
+              0 0 45px rgba(6, 182, 212, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.tech-svg circle[fill="rgba(18, 18, 30, 0.4)"] {
-  fill: rgba(255, 255, 255, 0.7) !important;
-  stroke: rgba(0, 0, 0, 0.06) !important;
+.profile-image-frame:hover {
+  transform: scale(1.03) rotate(1deg);
 }
 
-.tech-svg circle[stroke="rgba(255, 255, 255, 0.05)"] {
-  stroke: rgba(0, 0, 0, 0.04) !important;
+.profile-img-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--bg-primary);
+  background: var(--bg-secondary);
 }
 
-/* Animations for SVG elements */
-.orbit-dashed {
-  animation: spin-clockwise 35s infinite linear;
-  transform-origin: 250px 250px;
+/* Orbiting Rings */
+.profile-orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
 }
 
-.orbit-solid {
-  animation: spin-counter-clockwise 25s infinite linear;
-  transform-origin: 250px 250px;
+.profile-orbit-ring.ring-1 {
+  width: 93%;
+  height: 93%;
+  border: 1.5px dashed var(--accent-cyan);
+  opacity: 0.4;
+  animation: spin-clockwise 45s infinite linear;
 }
 
-.core-node {
-  animation: pulse-glow 3s infinite alternate ease-in-out;
+.profile-orbit-ring.ring-2 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--accent-fuchsia);
+  opacity: 0.25;
+  animation: spin-counter-clockwise 35s infinite linear;
 }
 
-/* Floating nodes animations */
-.tech-node {
-  filter: drop-shadow(0 0 8px currentColor);
+/* Floating Tech Badges */
+.tech-badge-floating {
+  position: absolute;
+  padding: 0.5rem 0.95rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  box-shadow: var(--glass-shadow);
+  z-index: 3;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
-.float-node-1 {
-  animation: float-n1 8s infinite ease-in-out;
-}
-.float-node-2 {
-  animation: float-n2 10s infinite ease-in-out;
-}
-.float-node-3 {
-  animation: float-n3 9s infinite ease-in-out;
+.badge-react {
+  top: 12%;
+  right: -2%;
+  animation: float-badge-react 6s infinite ease-in-out;
 }
 
-@keyframes spin-clockwise {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge-three {
+  bottom: 20%;
+  left: -4%;
+  animation: float-badge-three 7s infinite ease-in-out;
 }
 
-@keyframes spin-counter-clockwise {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+.badge-node {
+  bottom: 6%;
+  right: 12%;
+  animation: float-badge-node 8s infinite ease-in-out;
 }
 
-@keyframes pulse-glow {
-  0% {
-    opacity: 0.8;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
+@keyframes float-badge-react {
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50% { transform: translateY(-8px) rotate(-2deg); }
 }
 
-@keyframes float-n1 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(-10px, -15px); }
+@keyframes float-badge-three {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(10px) rotate(3deg); }
 }
 
-@keyframes float-n2 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(12px, -8px); }
-}
-
-@keyframes float-n3 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(8px, 15px); }
+@keyframes float-badge-node {
+  0%, 100% { transform: translateY(0) rotate(1deg); }
+  50% { transform: translateY(-7px) rotate(-1deg); }
 }
 
 /* Tablet & Mobile responsive */
