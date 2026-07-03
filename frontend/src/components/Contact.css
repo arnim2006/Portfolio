@@ -20,7 +20,7 @@
   font-weight: 800;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
-  color: #111827;
+  color: var(--heading-color);
 }
 
 .info-desc {
@@ -79,7 +79,7 @@ a.info-item:hover .info-icon-wrapper {
 .info-value {
   font-size: 1rem;
   font-weight: 600;
-  color: #111827;
+  color: var(--heading-color);
 }
 
 .info-socials {
@@ -115,7 +115,7 @@ a.info-item:hover .info-icon-wrapper {
 .social-link:hover {
   background: rgba(0, 0, 0, 0.05);
   border-color: rgba(0, 0, 0, 0.15);
-  color: #111827;
+  color: var(--heading-color);
   transform: translateY(-3px);
 }
 
@@ -154,10 +154,10 @@ a.info-item:hover .info-icon-wrapper {
 .form-group textarea {
   width: 100%;
   padding: 0.85rem 1.15rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--input-bg);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  color: #111827;
+  color: var(--text-primary);
   font-family: var(--font-body);
   font-size: 0.95rem;
   outline: none;

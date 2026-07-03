@@ -1,6 +1,6 @@
 .footer-section {
   padding: 4rem 0 2.5rem;
-  background: #f5f4f0;
+  background: var(--footer-bg);
   border-top: 1px solid var(--border-color);
   margin-top: 4rem;
 }
@@ -27,7 +27,7 @@
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 800;
-  color: #111827;
+  color: var(--heading-color);
   letter-spacing: -0.02em;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .footer-link:hover {
-  color: #111827;
+  color: var(--heading-color);
 }
 
 .scroll-top-btn {
@@ -76,7 +76,7 @@
 .scroll-top-btn:hover {
   background: rgba(0, 0, 0, 0.05);
   border-color: rgba(0, 0, 0, 0.15);
-  color: #111827;
+  color: var(--heading-color);
   transform: translateY(-3px);
 }
 

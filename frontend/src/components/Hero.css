@@ -141,7 +141,7 @@
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border-color);
-  color: #111827;
+  color: var(--heading-color);
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;

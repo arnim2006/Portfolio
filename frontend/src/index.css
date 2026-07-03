@@ -78,12 +78,12 @@
   --bg-main: #06060c;
   --bg-card: rgba(18, 18, 30, 0.65);
   --bg-card-hover: rgba(26, 26, 44, 0.8);
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.16);
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-hover: rgba(255, 255, 255, 0.24);
   
   --text-primary: #f3f4f6;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
   
   /* Vibrant Accent Gradients */
   --accent-cyan: #06b6d4;
@@ -91,7 +91,7 @@
   --accent-fuchsia: #d946ef;
 
   /* Theme-specific Elements */
-  --glow-opacity: 0.15;
+  --glow-opacity: 0.18;
   --glow-blend: screen;
   --heading-color: #ffffff;
   --card-shadow: none;
