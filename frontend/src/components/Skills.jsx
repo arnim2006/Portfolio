@@ -8,22 +8,26 @@ const Skills = () => {
     {
       title: 'Languages',
       icon: <Code2 size={24} className="category-icon icon-cyan" />,
-      skills: ['JavaScript', 'SQL', 'C / C++', 'Python', 'Java', 'HTML5 / CSS3']
+      skills: ['JavaScript', 'SQL', 'C / C++', 'Python', 'Java', 'HTML5 / CSS3'],
+      cardClass: 'card-cyan'
     },
     {
       title: 'Frontend & Libraries',
       icon: <Layout size={24} className="category-icon icon-indigo" />,
-      skills: ['React.js', 'Astro', 'Three.js (R3F)', 'Zustand', 'GSAP', 'Framer Motion', 'Tailwind CSS']
+      skills: ['React.js', 'Astro', 'Three.js (R3F)', 'Zustand', 'GSAP', 'Framer Motion', 'Tailwind CSS'],
+      cardClass: 'card-indigo'
     },
     {
       title: 'Backend & Database',
       icon: <Database size={24} className="category-icon icon-fuchsia" />,
-      skills: ['Node.js', 'Express.js', 'FastAPI', 'MongoDB', 'MySQL', 'Redis', 'RESTful APIs']
+      skills: ['Node.js', 'Express.js', 'FastAPI', 'MongoDB', 'MySQL', 'Redis', 'RESTful APIs'],
+      cardClass: 'card-fuchsia'
     },
     {
       title: 'Tools & Ecosystem',
       icon: <Wrench size={24} className="category-icon icon-cyan" />,
-      skills: ['Git & GitHub', 'Docker', 'Kubernetes', 'Firebase', 'VS Code', 'Postman']
+      skills: ['Git & GitHub', 'Docker', 'Kubernetes', 'Firebase', 'VS Code', 'Postman'],
+      cardClass: 'card-cyan'
     }
   ];
 
@@ -32,13 +36,13 @@ const Skills = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.15
+        staggerChildren: 0.1
       }
     }
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 35 },
     visible: { 
       opacity: 1, 
       y: 0,
@@ -47,11 +51,11 @@ const Skills = () => {
   };
 
   const badgeVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, y: 10 },
     visible: { 
       opacity: 1, 
-      scale: 1,
-      transition: { duration: 0.3 }
+      y: 0,
+      transition: { duration: 0.4 }
     }
   };
 
@@ -81,7 +85,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <motion.div 
               key={index}
-              className="glass-card skill-card"
+              className={`glass-card skill-card ${category.cardClass}`}
               variants={cardVariants}
             >
               <div className="card-header">
@@ -92,9 +96,8 @@ const Skills = () => {
                 {category.skills.map((skill, sIdx) => (
                   <motion.span 
                     key={sIdx} 
-                    className="badge badge-accent"
+                    className="skill-badge"
                     variants={badgeVariants}
-                    whileHover={{ scale: 1.05, y: -2 }}
                   >
                     {skill}
                   </motion.span>
