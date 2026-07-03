@@ -95,9 +95,13 @@ app.post('/api/contact', async (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`===============================================`);
-  console.log(`Portfolio contact server running on port ${PORT}`);
-  console.log(`API endpoint available at POST http://localhost:${PORT}/api/contact`);
-  console.log(`===============================================`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`===============================================`);
+    console.log(`Portfolio contact server running on port ${PORT}`);
+    console.log(`API endpoint available at POST http://localhost:${PORT}/api/contact`);
+    console.log(`===============================================`);
+  });
+}
+
+module.exports = app;
