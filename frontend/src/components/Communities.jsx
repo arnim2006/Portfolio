@@ -13,18 +13,11 @@ const Communities = () => {
       desc: 'Led the end-to-end frontend development of the official TEDxLNMIIT event portal, structuring registrations, ticketing, and speaker cards for smooth outreach.'
     },
     {
-      title: 'Competitive Programming',
-      role: 'LeetCode Active Solver',
-      date: '2024 - Present',
+      title: 'Desportivos Sports Festival',
+      role: 'Sponsorship Head',
+      date: '2025 - Present',
       icon: <Award size={24} className="comm-icon icon-indigo" />,
-      desc: 'Actively solving computational problems on LeetCode. Deeply interested in optimizing complex data structures and algorithmic complexity.'
-    },
-    {
-      title: 'ONGC Digital Twin Team',
-      role: 'Rig Telemetry Architect',
-      date: 'June 2026 - Present',
-      icon: <Heart size={24} className="comm-icon icon-fuchsia" />,
-      desc: 'Collaborated with engineering leads to architect real-time monitoring interfaces and high-performance telemetry loops for drilling rig operations.'
+      desc: 'Headed sponsorship campaigns for Desportivos, Rajasthan\'s largest college sports festival. Directed corporate outreach, negotiated brand sponsorships, and secured festival funding.'
     }
   ];
 
@@ -56,9 +49,9 @@ const Communities = () => {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Community & Achievements</h2>
+          <h2 className="section-title">Community Involvement</h2>
           <p className="section-subtitle">
-            My contributions as a leader, team player, and mentor in technical communities and national hackathons.
+            My leadership roles, organization contributions, and campus festival coordination.
           </p>
         </motion.div>
 
