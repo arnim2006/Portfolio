@@ -6,11 +6,11 @@ import './Communities.css';
 const Communities = () => {
   const involvements = [
     {
-      title: 'TEDxLNMIIT Core Web Team',
-      role: 'Web Developer',
+      title: 'TEDxLNMIIT',
+      role: 'Core Team & Web Developer',
       date: 'Oct 2025 - Dec 2025',
       icon: <Users size={24} className="comm-icon icon-cyan" />,
-      desc: 'Led the end-to-end frontend development of the official TEDxLNMIIT event portal, structuring registrations, ticketing, and speaker cards for smooth outreach.'
+      desc: 'Contributed to organizing TEDxLNMIIT, a premier independently organized TED event hosting thought leaders and industry experts. Managed end-to-end web operations, designing the registration and ticketing portal that drove attendee outreach.'
     },
     {
       title: 'Desportivos Sports Festival',
