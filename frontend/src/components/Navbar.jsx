@@ -29,7 +29,7 @@ const Navbar = ({ theme, toggleTheme }) => {
 
       // Scroll Spy logic
       const scrollPosition = window.scrollY + 120; // offset for nav height
-      
+
       for (const item of navItems) {
         const el = document.getElementById(item.id);
         if (el) {
@@ -94,26 +94,26 @@ const Navbar = ({ theme, toggleTheme }) => {
           <a href="mailto:arnimagarwal7@gmail.com" className="social-icon-link" title="Email">
             <Mail size={18} />
           </a>
-          
+
           {/* Theme Toggle Button */}
-          <button 
-            onClick={toggleTheme} 
-            className="theme-toggle-btn" 
-            aria-label="Toggle theme" 
+          <button
+            onClick={toggleTheme}
+            className="theme-toggle-btn"
+            aria-label="Toggle theme"
             title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
             {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
 
-          <a href="https://drive.google.com/file/d/YOUR_DRIVE_FILE_ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-btn" title="Download Resume">
+          <a href="https://drive.google.com/file/d/10dSi-UjpGBTDBPd4DVr-P69tO8jIIg_Y/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-btn" title="Download Resume">
             <FileText size={16} />
             <span>Resume</span>
           </a>
         </div>
 
         {/* Mobile menu button */}
-        <button 
-          className="mobile-menu-btn" 
+        <button
+          className="mobile-menu-btn"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -133,7 +133,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               {item.label}
             </button>
           ))}
-          
+
           {/* Mobile Theme Toggle */}
           <button onClick={toggleTheme} className="mobile-theme-toggle-btn">
             {theme === 'light' ? (
@@ -160,7 +160,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               <Mail size={20} />
             </a>
           </div>
-          <a href="https://drive.google.com/file/d/YOUR_DRIVE_FILE_ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="mobile-resume-btn">
+          <a href="https://drive.google.com/file/d/10dSi-UjpGBTDBPd4DVr-P69tO8jIIg_Y/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="mobile-resume-btn">
             <FileText size={18} />
             <span>Resume</span>
           </a>
