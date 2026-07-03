@@ -8,7 +8,7 @@ const Experience = () => {
     {
       role: 'Software Developer Intern',
       company: 'Oil and Natural Gas Corporation (ONGC)',
-      date: 'June 2026 - Present',
+      date: 'June 2026 - July 2026',
       type: 'internship',
       desc: 'Architected a web-based 3D digital twin of a drilling rig using React and Three.js (React Three Fiber), decoupling 10 Hz telemetry from React reconciliation via Zustand. Integrated YOLOv8/BoT-SORT tracking with OpenCV and DLT triangulation. Built FastAPI WebSocket telemetry and RAG pipelines for automated root-cause analysis (RCA).'
     },
@@ -49,7 +49,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div key={index} className="timeline-item">
               <div className="timeline-dot"></div>
-              <motion.div 
+              <motion.div
                 className="timeline-content"
                 variants={cardVariants}
                 initial="hidden"
@@ -68,7 +68,7 @@ const Experience = () => {
                       ) : (
                         <>
                           <GraduationCap size={12} />
-                          <span>Academic TA</span>
+                          <span></span>
                         </>
                       )}
                     </span>

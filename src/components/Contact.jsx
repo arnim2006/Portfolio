@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API request
     setTimeout(() => {
       setIsSubmitting(false);
@@ -51,14 +51,14 @@ const Contact = () => {
         >
           <h2 className="section-title">Get in Touch</h2>
           <p className="section-subtitle">
-            Have an exciting project in mind, a job opportunity, or just want to say hello? 
+            Have an exciting project in mind, a job opportunity, or just want to say hello?
             Drop me a message!
           </p>
         </motion.div>
 
         <div className="contact-grid">
           {/* Left Column: Info & Socials */}
-          <motion.div 
+          <motion.div
             className="contact-info"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -67,7 +67,7 @@ const Contact = () => {
           >
             <h3 className="info-title">Let's start a conversation</h3>
             <p className="info-desc">
-              I'm always open to discussing web development projects, creative designs, 
+              I'm always open to discussing web development projects, creative designs,
               or integrations with technical teams.
             </p>
 
@@ -99,7 +99,7 @@ const Contact = () => {
                 <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/arnimaga/" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
                   <Linkedin size={20} />
                 </a>
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
           </motion.div>
 
           {/* Right Column: Form */}
-          <motion.div 
+          <motion.div
             className="contact-form-wrapper"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -173,9 +173,9 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
-                className="submit-btn" 
+              <button
+                type="submit"
+                className="submit-btn"
                 disabled={isSubmitting || submitSuccess}
               >
                 {isSubmitting ? (

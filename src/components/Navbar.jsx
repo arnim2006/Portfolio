@@ -88,7 +88,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="GitHub">
             <Github size={18} />
           </a>
-          <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/arnimaga/" target="_blank" rel="noopener noreferrer" className="social-icon-link" title="LinkedIn">
             <Linkedin size={18} />
           </a>
           <a href="mailto:arnimagarwal7@gmail.com" className="social-icon-link" title="Email">
@@ -105,7 +105,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
 
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn" title="Download Resume">
+          <a href="https://drive.google.com/file/d/YOUR_DRIVE_FILE_ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-btn" title="Download Resume">
             <FileText size={16} />
             <span>Resume</span>
           </a>
@@ -153,14 +153,14 @@ const Navbar = ({ theme, toggleTheme }) => {
             <a href="https://github.com/arnim2006" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com/in/arnim-agarwal" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
+            <a href="https://www.linkedin.com/in/arnimaga/" target="_blank" rel="noopener noreferrer" className="mobile-social-icon">
               <Linkedin size={20} />
             </a>
             <a href="mailto:arnimagarwal7@gmail.com" className="mobile-social-icon">
               <Mail size={20} />
             </a>
           </div>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="mobile-resume-btn">
+          <a href="https://drive.google.com/file/d/YOUR_DRIVE_FILE_ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="mobile-resume-btn">
             <FileText size={18} />
             <span>Resume</span>
           </a>

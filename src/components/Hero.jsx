@@ -57,7 +57,7 @@ const Hero = () => {
               <span>Let's Connect</span>
               <ArrowRight size={18} />
             </button>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cta-secondary-btn">
+            <a href="https://drive.google.com/file/d/YOUR_DRIVE_FILE_ID/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="cta-secondary-btn">
               <span>Download CV</span>
               <Download size={16} />
             </a>
