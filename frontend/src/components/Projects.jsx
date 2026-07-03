@@ -13,18 +13,25 @@ const Projects = () => {
       liveLink: 'https://github.com/arnim2006'
     },
     {
-      title: 'RigVision - Object Tracking',
-      desc: 'An AI-powered computer vision dashboard processing 4 RTSP feeds at 10 Hz. Integrates YOLOv8 and BoT-SORT trackers with OpenCV calibration and DLT triangulation for worker PPE auditing.',
-      tags: ['FastAPI', 'Redis', 'YOLOv8', 'OpenCV', 'Docker', 'React.js'],
-      githubLink: 'https://github.com/arnim2006',
-      liveLink: 'https://github.com/arnim2006'
+      title: 'RigVision - 3D Drilling Twin',
+      desc: 'Real-time 3D system for monitoring ONGC drilling rigs. Fuses live multi-camera person tracking, YOLOv8 PPE detection, and IoT sensor data into an interactive browser view. Employs a custom LLM to diagnose telemetry anomalies using rig manuals.',
+      tags: ['React.js', 'Three.js (R3F)', 'Zustand', 'FastAPI', 'YOLOv8', 'OpenCV'],
+      githubLink: 'https://github.com/satvikdua06-dev/RigVision',
+      liveLink: null
     },
     {
-      title: '3D Drilling Twin',
-      desc: 'A web-based 3D digital twin of an active drilling rig using React and Three.js (React Three Fiber), decoupling high-frequency 10 Hz telemetry from React reconciliation using Zustand.',
-      tags: ['React.js', 'Three.js (R3F)', 'Zustand', 'FastAPI', 'WebSockets'],
-      githubLink: 'https://github.com/arnim2006',
-      liveLink: 'https://github.com/arnim2006'
+      title: 'CodeGuard AI',
+      desc: 'An AI-powered automated code reviewer built to inspect repository commits and pull requests. Automatically scans source files, identifies syntax issues and performance bottlenecks, and generates optimized code suggestions.',
+      tags: ['React.js', 'Node.js', 'Express.js', 'LLM API', 'Tailwind CSS'],
+      githubLink: 'https://github.com/arnim2006/CodeGuard-AI-',
+      liveLink: null
+    },
+    {
+      title: 'TEDxLNMIIT Portal',
+      desc: 'The official high-performance web portal for TEDxLNMIIT. Architected to support online event registration pipelines, attendee ticketing, campus ambassador management, and speaker card animations.',
+      tags: ['Astro', 'React.js', 'Framer Motion', 'Tailwind CSS', 'Vite'],
+      githubLink: 'https://github.com/Keshav-shar/tedx-lnmiit-2026',
+      liveLink: 'https://tedxlnmiit.in'
     }
   ];
 
@@ -95,10 +102,12 @@ const Projects = () => {
                   <Github size={16} />
                   <span>Source</span>
                 </a>
-                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link-btn live-btn" title="View Live Demo">
-                  <ExternalLink size={16} />
-                  <span>Live Demo</span>
-                </a>
+                {project.liveLink && (
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link-btn live-btn" title="View Live Demo">
+                    <ExternalLink size={16} />
+                    <span>Live Demo</span>
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
