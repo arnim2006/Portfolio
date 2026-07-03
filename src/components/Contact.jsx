@@ -21,23 +21,44 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitSuccess(false);
 
-    // Simulate API request
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+    // Dynamic URL fallback (works locally on port 5000 and adapts in production)
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/contact';
+
+    try {
+      const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
-      // Clear success message after 5 seconds
-      setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitSuccess(true);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+        // Clear success message after 5 seconds
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        alert(result.message || 'Failed to send your message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Contact Form Fetch Error:', error);
+      alert('Could not connect to the email server. Please make sure the backend is running.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
