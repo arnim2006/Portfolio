@@ -39,9 +39,9 @@ const Journey = () => {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">My Journey</h2>
+          <h2 className="section-title">Education</h2>
           <p className="section-subtitle">
-            An overview of my academic milestones and self-directed path towards software engineering.
+            My academic qualifications and educational background.
           </p>
         </motion.div>
 

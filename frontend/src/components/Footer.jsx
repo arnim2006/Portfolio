@@ -43,7 +43,7 @@ const Footer = () => {
             <button onClick={() => handleNavClick('skills')} className="footer-link">Skills</button>
             <button onClick={() => handleNavClick('experience')} className="footer-link">Experience</button>
             <button onClick={() => handleNavClick('projects')} className="footer-link">Projects</button>
-            <button onClick={() => handleNavClick('journey')} className="footer-link">Journey</button>
+            <button onClick={() => handleNavClick('journey')} className="footer-link">Education</button>
             <button onClick={() => handleNavClick('community')} className="footer-link">Community</button>
             <button onClick={() => handleNavClick('contact')} className="footer-link">Contact</button>
           </div>

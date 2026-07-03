@@ -12,7 +12,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     { label: 'Skills', id: 'skills' },
     { label: 'Experience', id: 'experience' },
     { label: 'Projects', id: 'projects' },
-    { label: 'Journey', id: 'journey' },
+    { label: 'Education', id: 'journey' },
     { label: 'Community', id: 'community' },
     { label: 'Contact', id: 'contact' }
   ];
